@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебный интерактивный каталог Samsung Galaxy: модели, характеристики, сравнение и избранное.">
+  <title>Samsung Galaxy — Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html"><b>Samsung</b><span>Galaxy</span></a>
+  <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+  <nav class="nav">
+    <a class="active" href="index.html">Главная</a>
+    <a href="smartphones.html">Смартфоны</a>
+    <a href="compare.html">Сравнение</a>
+    <a href="about.html">О Galaxy</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+  <div class="header-tools">
+    <a href="smartphones.html" class="header-icon" aria-label="Поиск">⌕</a>
+    <a href="smartphones.html" class="header-icon favorite-link" aria-label="Избранное">♡<span id="favCount">0</span></a>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero-home">
+    <div class="hero-content">
+      <span class="eyebrow">SAMSUNG GALAXY · 2026</span>
+      <h1>Технологии, которые<br><span>хочется держать в руках.</span></h1>
+      <p>Исследуй линейку Samsung Galaxy: флагманские S, складные Z и универсальные A. Смотри характеристики, сравнивай модели и выбирай свой смартфон.</p>
+      <div class="hero-actions">
+        <a class="btn btn-blue" href="smartphones.html">Смотреть смартфоны <span>→</span></a>
+        <a class="btn btn-ghost" href="compare.html">Сравнить модели</a>
+      </div>
+      <div class="hero-note"><span>●</span> 25 моделей · 3 серии · подробное сравнение</div>
+    </div>
+    <div class="hero-showcase" aria-label="Galaxy S26 Ultra">
+      <div class="showcase-glow glow-blue"></div>
+      <div class="showcase-glow glow-violet"></div>
+      <div class="showcase-ring ring-one"></div>
+      <div class="showcase-ring ring-two"></div>
+      <img class="hero-s26" src="images/s26-ultra-hero.png" alt="Samsung Galaxy S26 Ultra">
+    </div>
+  </section>
+
+  <section class="section series-section">
+    <div class="section-heading">
+      <div><span class="eyebrow">ПОПУЛЯРНЫЕ СЕРИИ</span><h2>Найди свой Galaxy</h2></div>
+      <a class="text-link" href="smartphones.html">Все серии →</a>
+    </div>
+    <div class="series-grid series-grid-home">
+      <a class="series-card series-s" href="smartphones.html?series=S"><div class="series-art"><span>S</span></div><div><span class="series-tag">Флагманы</span><h3>Galaxy S</h3><p>Максимальная производительность, камеры и Galaxy AI.</p><span class="card-link">Перейти →</span></div></a>
+      <a class="series-card series-z" href="smartphones.html?series=Z"><div class="series-art"><span>Z</span></div><div><span class="series-tag">Складные</span><h3>Galaxy Z</h3><p>Fold и Flip для нового формата мобильного опыта.</p><span class="card-link">Перейти →</span></div></a>
+      <a class="series-card series-a" href="smartphones.html?series=A"><div class="series-art"><span>A</span></div><div><span class="series-tag">На каждый день</span><h3>Galaxy A</h3><p>Яркие экраны, камеры и баланс возможностей.</p><span class="card-link">Перейти →</span></div></a>
+    </div>
+  </section>
+
+  <section class="section popular-section">
+    <div class="section-heading">
+      <div><span class="eyebrow">РЕКОМЕНДУЕМ</span><h2>Популярные смартфоны</h2></div>
+      <a class="text-link" href="smartphones.html">Все смартфоны →</a>
+    </div>
+    <div id="homePhoneGrid" class="home-phone-grid"></div>
+  </section>
+
+  <section class="stats-section">
+    <div><strong>25</strong><span>моделей</span></div><div><strong>3</strong><span>серии Galaxy</span></div><div><strong>16</strong><span>параметров для сравнения</span></div><div><strong>100%</strong><span>учебный проект</span></div>
+  </section>
+
+  <section class="section feature-section">
+    <div class="section-heading"><div><span class="eyebrow">ИНТЕРАКТИВ</span><h2>Исследуй Galaxy</h2></div></div>
+    <div class="feature-grid">
+      <a href="smartphones.html" class="feature-card"><span class="feature-icon">⌕</span><h3>Поиск и фильтры</h3><p>Найди нужную модель по названию или серии и быстро отсортируй каталог.</p><span class="card-link">Открыть каталог →</span></a>
+      <a href="compare.html" class="feature-card"><span class="feature-icon">⇄</span><h3>Сравнение</h3><p>Выбери две модели и сравни экран, камеры, батарею, память и вес.</p><span class="card-link">Начать сравнение →</span></a>
+      <a href="smartphones.html" class="feature-card"><span class="feature-icon">♡</span><h3>Избранное</h3><p>Сохраняй понравившиеся модели в браузере и возвращайся к ним позже.</p><span class="card-link">Выбрать модель →</span></a>
+    </div>
+  </section>
+</main>
+
+<footer><p>© 2026 Samsung Galaxy — учебный проект Moroz Stanislav, IT11Z</p></footer>
+<script src="js/phones.js"></script><script src="js/script.js"></script>
+</body>
+</html>
