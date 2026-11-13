@@ -1,6 +1,87 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Samsung Galaxy — Контакты</title><link rel="stylesheet" href="css/style.css"></head>
-<body><header class="site-header"><a class="logo" href="index.html"><b>Samsung</b><span>Galaxy</span></a><button class="menu-toggle" aria-label="Открыть меню">☰</button><nav class="nav"><a href="index.html">Главная</a><a href="smartphones.html">Смартфоны</a><a href="compare.html">Сравнение</a><a href="about.html">О Galaxy</a><a class="active" href="contact.html">Контакты</a></nav></header>
-<main><section class="page-hero"><span class="eyebrow">Обратная связь</span><h1>Контакты</h1><p>Форма является демонстрационной частью учебного проекта.</p></section>
-<section class="section contact-layout"><div class="contact-info"><h2>Есть вопрос?</h2><p>Напиши нам, какую модель или функцию стоит добавить в каталог.</p><div class="contact-item"><strong>Автор</strong><span>Moroz Stanislav</span></div><div class="contact-item"><strong>Группа</strong><span>IT11Z</span></div><div class="contact-item"><strong>Проект</strong><span>Web Programming I</span></div></div>
-<form id="contactForm" class="contact-form"><label>Имя<input id="name" name="name" required minlength="2" placeholder="Ваше имя"></label><label>Email<input id="email" name="email" type="email" required placeholder="name@example.com"></label><label>Сообщение<textarea id="message" name="message" required minlength="10" rows="6" placeholder="Ваше сообщение..."></textarea></label><button class="btn btn-light" type="submit">Отправить</button><p id="formMessage" class="form-message" aria-live="polite"></p></form></div></section></main>
-<footer><p>© 2026 Samsung Galaxy — учебный проект</p></footer><script src="js/script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Samsung Galaxy — Контакты
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/dark.css" rel="stylesheet"/>
+ </head>
+ <body data-page="contact">
+  <div id="siteHeader"></div>
+  <main>
+   <section class="page-hero">
+    <span class="eyebrow">
+     Обратная связь
+    </span>
+    <h1>
+     Контакты
+    </h1>
+    <p>
+     Форма является демонстрационной частью учебного проекта.
+    </p>
+   </section>
+   <section class="section contact-layout">
+    <div class="contact-info">
+     <h2>
+      Есть вопрос?
+     </h2>
+     <p>
+      Напиши нам, какую модель или функцию стоит добавить в каталог.
+     </p>
+     <div class="contact-item">
+      <strong>
+       Автор
+      </strong>
+      <span>
+       Moroz Stanislav
+      </span>
+     </div>
+     <div class="contact-item">
+      <strong>
+       Группа
+      </strong>
+      <span>
+       IT11Z
+      </span>
+     </div>
+     <div class="contact-item">
+      <strong>
+       Проект
+      </strong>
+      <span>
+       Web Programming I
+      </span>
+     </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+     <label>
+      Имя
+      <input id="name" minlength="2" name="name" placeholder="Ваше имя" required=""/>
+     </label>
+     <label>
+      Email
+      <input id="email" name="email" placeholder="name@example.com" required="" type="email"/>
+     </label>
+     <label>
+      Сообщение
+      <textarea id="message" minlength="10" name="message" placeholder="Ваше сообщение..." required="" rows="6"></textarea>
+     </label>
+     <button class="btn btn-light" type="submit">
+      Отправить
+     </button>
+     <p aria-live="polite" class="form-message" id="formMessage">
+     </p>
+    </form>
+   </section>
+  </main>
+  <div id="siteFooter"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/script.js">
+  </script>
+   <script src="js/interactive.js"></script>
+ </body>
+</html>
+
