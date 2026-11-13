@@ -103,7 +103,7 @@ function initCatalog(){
   const q=document.getElementById('searchInput'),s=document.getElementById('seriesFilter'),sort=document.getElementById('sortFilter');if(!q)return;
   const params=new URLSearchParams(location.search);if(params.get('series'))s.value=params.get('series');if(params.get('focus')){const fp=PHONES.find(p=>p.id===params.get('focus'));if(fp)q.value=fp.name;}
   function update(){
-    let list=PHONES.filter(p=>(s.value==='all'||p.series===s.value)&&p.name.toLowerCase().includes(q.value.trim().toLowerCase()));
+    let list=PHONES.filter(p=>(!window.__favOnly||getFavs().includes(p.id))&&(s.value==='all'||p.series===s.value)&&p.name.toLowerCase().includes(q.value.trim().toLowerCase()));
     if(sort.value==='name')list.sort((a,b)=>a.name.localeCompare(b.name));
     if(sort.value==='screen')list.sort((a,b)=>parseFloat(b.screen)-parseFloat(a.screen));
     if(sort.value==='series')list.sort((a,b)=>a.series.localeCompare(b.series)||a.name.localeCompare(b.name));
